@@ -27,8 +27,14 @@ public class MathFunction {
         + ru.job4j.math.MathFunction.divide(first, second);
     }
 
+    public static double allOperations(double first, double second) {
+        return sum(first, second) + multiply(first, second)
+                + subtract(first, second) + divide(first, second);
+    }
+
     public static void main(String[] args) {
         System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
         System.out.println("Результат расчета равен: " + subtractAndDivide(10, 20));
+        System.out.println("Результат расчета равен: " + allOperations(10, 20));
     }
 }
