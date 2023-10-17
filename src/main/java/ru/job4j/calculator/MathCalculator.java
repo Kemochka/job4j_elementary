@@ -5,8 +5,7 @@ import static ru.job4j.math.MathFunction.*;
 public class MathCalculator {
 
     public static double subtractAndDivide(double first, double second) {
-        return subtract(first, second)
-                + divide(first, second);
+        return subtract(first, second) + divide(first, second);
     }
 
     public static double allOperations(double first, double second) {
