@@ -13,8 +13,14 @@ public class MathCalculator {
                 + sub(first, second) + divide(first, second);
     }
 
+    public static double sumAndMultiply(double first, double second) {
+        return ru.job4j.math.MathFunction.sum(first, second)
+                + ru.job4j.math.MathFunction.multiply(first, second);
+    }
+
     public static void main(String[] args) {
         System.out.println("Результат расчета равен: " + subAndDivide(10, 20));
         System.out.println("Результат расчета равен: " + allOperations(10, 20));
+        System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
     }
 }
