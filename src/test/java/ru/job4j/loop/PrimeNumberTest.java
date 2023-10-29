@@ -27,4 +27,12 @@ class PrimeNumberTest {
         int expected = 1;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    void when6() {
+        int finish = 6;
+        int result = PrimeNumber.calc(finish);
+        int expected = 3;
+        assertThat(result).isEqualTo(expected);
+    }
 }
